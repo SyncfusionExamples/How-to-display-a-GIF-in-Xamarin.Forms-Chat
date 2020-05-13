@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             x:Class="GettingStarted.GifContainer">
+    <ffimageloading:SvgCachedImage 
+        HeightRequest="200"
+        WidthRequest="150"
+        HorizontalOptions="StartAndExpand" 
+        VerticalOptions="Center" 
+        Aspect="Fill" 
+        x:Name="imageWave" 
+        Source="{TemplateBinding BindingContext.Source}"
+        Margin="0"/>
+</ContentView>
